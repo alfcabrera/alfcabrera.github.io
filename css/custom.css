@@ -1,0 +1,65 @@
+.carousel-item {
+  height: 65vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+.carousel-caption {
+  text-shadow: rgba(0, 0, 0, 0.9) 1px 0 10px;
+  font-weight: bold;
+}
+
+.feature-card {
+  position: relative;
+}
+
+.feature-card:hover {
+  opacity: 0.9;
+}
+
+.feature-card i {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+}
+
+.quick-links li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+i.fa-angle-double-right {
+  margin-right: 5px;
+}
+
+#footer h5 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+.nav-item { 
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  opacity: 0.9;
+  color: #ddd; 
+}
+
+.h-100 img:hover {
+  opacity: .8;
+}
