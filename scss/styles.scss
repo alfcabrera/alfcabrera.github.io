@@ -1,5 +1,7 @@
 // Include any default variable overrides here (though functions won't be available)
 $font-family-sans-serif: "Open Sans", sans-serif;
+$headings-font-weight: 700;
+$info: #2c7099;
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 @import "bootstrap/bootstrap";

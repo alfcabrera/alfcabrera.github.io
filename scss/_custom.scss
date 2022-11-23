@@ -15,23 +15,39 @@
 	gap: 2rem;
 }
 
+.benefits {
+	@extend .list-unstyled;
+	li {
+		position: relative;
+		padding-left: 3rem;
+		&::before {
+			content: "";
+			position: absolute;
+			width: 2rem;
+			height: 2rem;
+			overflow: hidden;
+			background: url(../images/icons/checkmark.svg);
+			left: 0;
+		}
+	}
+}
+
 .has-dropdown {
 	position: relative;
-
 	ul {
 		list-style: none;
 		display: none;
 		z-index: 2;
 		margin: 0;
 		padding: 0;
-		flex-direction: column;
-		width: max-content;
-		gap: 2rem;
+		width: 20ch;
 		position: absolute;
-		top: calc(100% + 8px);
+		top: 100%;
 		li {
 			a {
 				color: #000;
+				display: block;
+				margin-bottom: 0.25rem;
 				text-decoration: none;
 				background: #eee;
 				padding: 0.75rem;
@@ -42,8 +58,18 @@
 		}
 	}
 	&:hover ul {
-		display: flex;
+		display: block;
 	}
+}
+
+.card-icon {
+	position: absolute;
+	right: 1rem;
+	bottom: 1rem;
+}
+
+.bg-translucent {
+	background: rgba(255, 255, 255, 0.7);
 }
 
 .item-card {
@@ -168,6 +194,20 @@
 			border-radius: 50%;
 		}
 	}
+}
+
+.tree-bg {
+	@extend .py-5;
+	background: url("../images/tree-bg.jpg") no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.site-bg {
+	@extend .py-5;
+	background: url("../images/bg-2.jpg") no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 .pre-footer {
