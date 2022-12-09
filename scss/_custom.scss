@@ -39,10 +39,10 @@
 		display: none;
 		z-index: 2;
 		margin: 0;
-		padding: 0;
+		padding: 1rem 0;
 		width: 20ch;
 		position: absolute;
-		top: 100%;
+		top: 1.75rem;
 		li {
 			a {
 				color: #000;
@@ -212,6 +212,16 @@
 
 .pre-footer {
 	background-color: #e5e5e5;
+}
+
+.accordion-button:not(.collapsed) {
+	color: $danger;
+	background-color: lighten($danger, 40%);
+}
+
+.accordion-button:focus {
+	border-color: none;
+	box-shadow: none;
 }
 
 footer {
