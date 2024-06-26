@@ -1,30 +1,41 @@
 ---
-import ExperienceItem from "./ExperienceItem.astro"
-const EXPERIENCIE = [
-  {
-    date: "Actualmente...",
-    title: "Creador de Contenido",
-    company: "Twitch",
-    description:
-      "Divulgo sobre programación y desarrollo web en diferentes plataformas. Galardonado como mejor creador de contenido de habla no-inglesa en 2022 y mejor comunidad en 2023 por GitHub.",
-    link: "https://twitch.tv/midudev",
-  },
-  {
-    date: "Septiembre 2022",
-    title: "Principal Frontend Engineer",
-    company: "Adevinta Spain",
-    description:
-      "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de aplicaciones web. Mejora de un 30% en la entrega de software. Implantación de medidas de integración continua y despliegue con A/B testing en más de 15 equipos.",
-  },
-]
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCE = [
+	{
+		date: "Desde 2021 - Actualmente",
+		title: "Analista de Diseño de Interfaces y Experiencia",
+		company: "Ministerio de Hacienda",
+		description:
+			"Responsable de la creación y mantenimiento de sistemas de diseño, diseño de interfaces para aplicaciones y sitios web. Codificación y entrega del código (HTML/CSS) de dichas aplicaciones y sitios web",
+	},
+	{
+		date: "Desde 2016 hasta 2021",
+		title: "Diseñador UI/Webmaster",
+		company: "Instituto Tecnológico de Las Américas",
+		description: "Diseño de interfaces para proyectos web y aplicaciones para la institución.",
+	},
+	{
+		date: "2020",
+		title: "Diseñador UI",
+		company: "Coco Mercado",
+		description: `Trabajo remoto como parte del equipo de diseñadores de interfaz para la web de Coco Mercado`,
+	},
+	{
+		date: "Desde 2014 hasta 2016",
+		title: "Diseñador Web",
+		company: "Linom Consultants (IKEA Dominicana)",
+		description:
+			"Responsable del diseño de nuevas páginas de promociones y banners para las tiendas web de IKEA en República Dominicana, Puerto Rico e Islas Españolas. También diseñar y programar todos los newsletters semanales y mensuales.",
+	},
+];
 ---
 
 <ol class="relative mt-16">
-  {
-    EXPERIENCIE.map((experiencie) => (
-      <li class="">
-        <ExperienceItem {...experiencie} />
-      </li>
-    ))
-  }
+	{
+		EXPERIENCE.map((experience) => (
+			<li class="">
+				<ExperienceItem {...experience} />
+			</li>
+		))
+	}
 </ol>
