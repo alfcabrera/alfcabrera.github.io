@@ -1,6 +1,7 @@
 ---
 const personalImageAlt = "Mario Cabrera";
 import LinkedInIcon from "@/components/icons/LinkedIn.astro";
+import BehanceIcon from "@/components/icons/Behance.astro";
 import MailIcon from "@/components/icons/Mail.astro";
 import SocialPill from "@/components/SocialPill.astro";
 ---
@@ -11,7 +12,7 @@ import SocialPill from "@/components/SocialPill.astro";
 	</div>
 	<h1 class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white">Hola, soy Mario Cabrera</h1>
 	<p class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300">
-		<strong>Diseñador UI/UX</strong>. Con experiencia en diseño, desarrollo e implementación de aplicaciones web.
+		<strong>Diseñador UI/UX</strong> con experiencia en diseño, desarrollo e implementación de aplicaciones web.
 	</p>
 	<nav class="flex flex-wrap gap-4 mt-8">
 		<SocialPill href="mailto:mac25us@gmail.com">
@@ -21,6 +22,10 @@ import SocialPill from "@/components/SocialPill.astro";
 		<SocialPill href="https://linkedin.com/in/alfcabrera">
 			<LinkedInIcon class="size-4" />
 			LinkedIn
+		</SocialPill>
+		<SocialPill href="https://be.net/alfcabrera">
+			<BehanceIcon class="size-4" />
+			Behance
 		</SocialPill>
 	</nav>
 </div>
