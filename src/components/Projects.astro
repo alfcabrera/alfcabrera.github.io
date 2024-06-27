@@ -19,10 +19,12 @@ const TAGS = {
 	BOOTSTRAP: {
 		name: "Bootstrap",
 		class: "bg-[#7811f7] text-white",
+		icon: "",
 	},
 	JS: {
 		name: "Javascript",
 		class: "bg-[#f7df1e] text-black",
+		icon: "",
 	},
 };
 const PROJECTS = [
@@ -70,7 +72,7 @@ const PROJECTS = [
 							{tags.map((tag) => (
 								<li>
 									<span class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-2 px-3 `}>
-										{tag.icon && <tag.icon class="size-4" />}
+										<tag.icon class="size-4" />
 										{tag.name}
 									</span>
 								</li>
