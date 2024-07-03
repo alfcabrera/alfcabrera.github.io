@@ -26,6 +26,16 @@ const TAGS = {
 		class: "bg-[#f7df1e] text-black",
 		icon: "",
 	},
+	XD: {
+		name: "Adobe XD",
+		class: "bg-[#450135] text-[#f75eee]",
+		icon: "",
+	},
+	FIGMA: {
+		name: "Figma",
+		class: "bg-black text-white border border-white",
+		icon: "",
+	},
 };
 const PROJECTS = [
 	{
@@ -42,15 +52,24 @@ const PROJECTS = [
 		link: "https://www.sirite.gob.do",
 		github: "",
 		image: "/projects/sirite.png",
-		tags: [TAGS.WORDPRESS, TAGS.TAILWIND],
+		tags: [TAGS.FIGMA, TAGS.TAILWIND, TAGS.WORDPRESS],
 	},
 	{
 		title: "Sistema de Rifa - AFP Crecer",
 		description: "Sistema de Rifa desarrollado para AFP Crecer con fines de ser utilizado en su actividad navideña",
 		link: "",
 		github: "https://github.com/jorgetejeda/raffle/",
-		image: "/projects/raffle.png",
+		image: "/projects/raffle.jpg",
 		tags: [TAGS.JS, TAGS.TAILWIND],
+	},
+	,
+	{
+		title: "UI - Coco Mercado",
+		description: "Diseño de pantallas para la aplicación basado en un sistema de diseño creado en equipo.",
+		link: "https://cocomercado.com",
+		github: "",
+		image: "/projects/coco-mercado.jpg",
+		tags: [TAGS.XD],
 	},
 ];
 ---
@@ -72,7 +91,7 @@ const PROJECTS = [
 							{tags.map((tag) => (
 								<li>
 									<span class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-2 px-3 `}>
-										<tag.icon class="size-4" />
+										{tag.icon && <tag.icon class="size-4" />}
 										{tag.name}
 									</span>
 								</li>
